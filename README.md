@@ -1,4 +1,4 @@
-# Placebo Client
+# Placebo Client Fabric 26.2
 
 Placebo Client is a Minecraft Fabric client I made in Kotlin
 
