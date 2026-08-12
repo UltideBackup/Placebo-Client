@@ -99,6 +99,8 @@ Im also working on another Minecraft client that is actually serious and isnt a 
 
 That one isnt going to be released for a while though
 
+This was fun to make so maybe soon Ill update this
+
 ## License
 
 Placebo Client is licensed under GNU GPL v3.0
