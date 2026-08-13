@@ -84,15 +84,9 @@ Im not going to lie and say I wrote every single line myself
 
 ## Is This Getting Updated?
 
-Probably not
+Yes
 
-Theres a chance Ill come back and add more stuff like visual modules or a scripting API but I honestly dont know
-
-Im also working on another Minecraft client that is actually serious and isnt a joke
-
-That one isnt going to be released for a while though
-
-This was fun to make so maybe soon Ill update this
+Making this has been very fun so this most likely will be continued but shifting the focus to real modules and putting the current ones into a joke category
 
 ## License
 
