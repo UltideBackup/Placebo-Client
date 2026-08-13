@@ -3,7 +3,6 @@
 .gradle/
 build/
 out/
-classes/
 
 # eclipse
 
@@ -16,7 +15,7 @@ classes/
 *.ipr
 *.iws
 
-# vscode
+# vscode 
 
 .settings/
 .vscode/
