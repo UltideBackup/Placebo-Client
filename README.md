@@ -2,7 +2,7 @@
 
 Placebo Client is a Minecraft Fabric client I made in Kotlin
 
-This is not a serious client this is more of something I just goto and make stupid stuff when Im bored
+This is not a serious client this is more of something I go to and make stupid stuff when Im bored
 
 I made this mostly because I thought itd be funny to make my own client and see how far I could get
 
@@ -14,55 +14,29 @@ So dont expect some insane professional client from this
 
 ## What it has
 
-Right now it has a bunch of random modules for combat movement inventory and other stuff
+Right now it has modules for combat movement inventory visuals and other stuff
 
-Some of the modules are
+The client also has an event system and packet system for handling actual client features
 
-* `Jokekillaura`
-* `fast`
-* `bidge`
-* `backknocking`
-* `goodmode`
-* `nicechat`
-* `autobighit`
-* `steel`
-* `enabler`
-* `befriendbots`
-* `Jokeheystopfalling`
-* `blinkliterally`
-* `sunnyday`
-* `fuckingstopmefromthetortureofmakingthis`
+The stuff in the joke category is mostly the original modules from the video and is not meant to represent the actual direction of the client
 
-And yes those are actually the names
+## Dont Take The Joke Category Seriously
 
-Theres no scripting API or visual modules right now
+The joke category is mostly there for the original stuff from the video
 
-## Dont Take Some Of The Modules Seriously
-This is for stuff in the joke category
-These modules are not supposed to be taken seriously and they probably arent going to work how you expect them to
+These modules are not supposed to be taken seriously and some of them are literally just jokes
 
-Some of them are literally just jokes
-
-I also know more about making clients than what I put into these modules
-I just ran out of ideas while making them so some of the modules reuse things I already did in other modules
-
-Basically I was running out of shit to make
+The actual client is now focused on making real modules and proper client features
 
 ## Hypixel Bypass
-This is also meant for stuff in the joke category do not download this client expecting it to genuinely bypass
+
+This is also related to the original joke stuff so do not download this client expecting it to genuinely bypass Hypixel anticheat
+
 This is obviously the first open source client to bypass Hypixel anticheat
-
-Does it bypass
-
-Yes
-
-Does it actually work
-
-Yes but barely(This depends on what you think its gonna do)
 
 ## How I Made It
 
-The whole client took me around 3 hours to make
+The original version of the client took me around 3 hours to make
 
 Im also putting the raw recording of me making it here soon
 
@@ -72,9 +46,15 @@ The last hour is basically just me coding in complete silence
 
 I also had a voice changer on the entire time so I sound completely different
 
+The client has changed a lot since that recording though
+
 ## AI
 
-There was originally gonna be mcef but that shit never wanted to work so its a basic ui(100% made by ai)
+There was originally gonna be MCEF but that shit never wanted to work so its a basic UI that was 100 percent made with AI
+
+The current UI is still AI assisted but Im slowly changing it to make it more my own 
+
+And a rewrite will happen soon for the ui i just need to get better
 
 Everything else was made by me
 
@@ -84,7 +64,11 @@ Im not going to lie and say I wrote every single line myself
 
 Yes
 
-Making this has been very fun so this most likely will be continued but shifting the focus to real modules and putting the current ones into a joke category
+Making this has been very fun so this most likely will be continued
+
+The main focus is now shifting toward real modules and actual client features
+
+The original modules from the video will stay in the joke category while the rest of the client continues to develop normally
 
 ## License
 
