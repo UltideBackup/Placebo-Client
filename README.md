@@ -18,7 +18,7 @@ Right now it has a bunch of random modules for combat movement inventory and oth
 
 Some of the modules are
 
-* `killaura`
+* `Jokekillaura`
 * `fast`
 * `bidge`
 * `backknocking`
@@ -28,7 +28,7 @@ Some of the modules are
 * `steel`
 * `enabler`
 * `befriendbots`
-* `heystopfalling`
+* `Jokeheystopfalling`
 * `blinkliterally`
 * `sunnyday`
 * `fuckingstopmefromthetortureofmakingthis`

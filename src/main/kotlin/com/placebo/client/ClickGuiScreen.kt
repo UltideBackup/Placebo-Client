@@ -13,7 +13,7 @@ package com.placebo.client
 // Falls back to the default MC font if the custom font fails to load.
 // ═══════════════════════════════════════════════════════════════════════════
 
-import com.placebo.Useless.modules
+import com.placebo.Core.modules
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.Font
 import net.minecraft.client.gui.GuiGraphicsExtractor

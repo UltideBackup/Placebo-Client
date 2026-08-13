@@ -6,6 +6,10 @@ plugins {
 	id "org.jetbrains.kotlin.jvm" version "2.4.10"
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/placebo.accesswidener")
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because

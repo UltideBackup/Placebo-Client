@@ -5,8 +5,8 @@ package com.placebo.client
 //i fixed categories tho
 // ═══════════════════════════════════════════════════════════════════════════
 
-import com.placebo.Useless.modules
-import com.placebo.Useless.uselessclasses.coide
+import com.placebo.Core.modules
+import com.placebo.Core.Classes.Module
 import java.io.File
 import java.util.Properties
 
@@ -23,7 +23,7 @@ object ClickGuiState {
     )
 
     data class ModuleRow(
-        val module: coide,
+        val module: Module,
         var hoverAnim: Float = 0f,
         var toggleAnim: Float = if (module.state) 1f else 0f
     )
@@ -77,7 +77,7 @@ object ClickGuiState {
     //there was genuinely no reason for over engineering this.
     //when confronted said "I treated category system like it was the actual instead of a way to group your existing modules.".
     //terrible excuse, he needs to learn better.
-    private fun categorize(m: coide): String {
+    private fun categorize(m: Module): String {
         return m.category//pathetic.
     }
 

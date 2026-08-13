@@ -1,5 +1,8 @@
 package com.placebo
 
+import com.placebo.Core.Listener
+import com.placebo.Core.modules
+import com.placebo.Core.registerListener
 import net.fabricmc.api.ModInitializer
 import net.minecraft.resources.Identifier
 import org.slf4j.LoggerFactory
@@ -10,11 +13,11 @@ object PlaceboClient : ModInitializer {
     private val LOGGER = LoggerFactory.getLogger(MOD_ID)
 
     override fun onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
-
-        LOGGER.info("Hello Fabric world!")
+        for (module in modules){
+            if (module is Listener){
+                registerListener(module as Listener)
+            }
+        }
     }
 
     fun id(path: String): Identifier

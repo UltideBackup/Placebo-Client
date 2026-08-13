@@ -5,12 +5,13 @@
         "name": "Placebo Client",
         "description": "A joke Minecraft Fabric client. The native clickgui + 155 decoy modules were made with AI assistance; the 14 genuine modules are hand-written. Have fun finding the real ones among the decoys.",
         "authors": [
-                "Me!"
+                "Mylo"
         ],
         "contact": {
-                "homepage": "https://github.com/UltideBackup/Placebo-Client",
-                "sources": "https://github.com/UltideBackup/Placebo-Client"
+                "homepage": "https://github.com/Myl0o/Placebo-Client",
+                "sources": "https://github.com/Myl0o/Placebo-Client"
         },
+        "accessWidener": "placebo.accesswidener",
         "license": "GPL-3.0",
         "icon": "assets/placebo-client/icon.png",
         "environment": "client",

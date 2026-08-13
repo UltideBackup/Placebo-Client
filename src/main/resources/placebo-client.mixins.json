@@ -3,7 +3,8 @@
 	"package": "com.placebo.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"PacketHooks"
 	],
 	"injectors": {
 		"defaultRequire": 1
