@@ -76,7 +76,7 @@ I also had a voice changer on the entire time so I sound completely different
 
 ## AI
 
-There was originally gonna be mcef but that shit never wanted to work os its a basic ui(100% made by ai)
+There was originally gonna be mcef but that shit never wanted to work so its a basic ui(100% made by ai)
 
 Everything else was made by me
 
