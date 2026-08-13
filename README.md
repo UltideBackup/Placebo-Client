@@ -62,15 +62,6 @@ Does it actually work
 
 Yes but barely(This depends on what you think its gonna do)
 
-
-
-## $10 Challenge
-
-If you can win a duel with every module enabled except "heystopfalling" Ill give you $10
-The only rule is that you cannot fight someone whos standing still you must do a random duel
-
-I dont know why youd try this but if you do good luck
-
 ## How I Made It
 
 The whole client took me around 3 hours to make
