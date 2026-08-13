@@ -62,15 +62,6 @@ Does it actually work
 
 Yes but barely(This depends on what you think its gonna do)
 
-
-
-## $10 Challenge
-
-If you can win a duel with every module enabled except "heystopfalling" Ill give you $10
-The only rule is that you cannot fight someone whos standing still you must do a random duel
-
-I dont know why youd try this but if you do good luck
-
 ## How I Made It
 
 The whole client took me around 3 hours to make
@@ -85,7 +76,7 @@ I also had a voice changer on the entire time so I sound completely different
 
 ## AI
 
-There was originally gonna be mcef but that shit never wanted to work os its a basic ui(100% made by ai)
+There was originally gonna be mcef but that shit never wanted to work so its a basic ui(100% made by ai)
 
 Everything else was made by me
 
