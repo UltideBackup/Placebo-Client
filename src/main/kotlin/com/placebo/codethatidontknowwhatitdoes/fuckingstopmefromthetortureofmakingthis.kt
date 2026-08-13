@@ -8,7 +8,7 @@ import kotlin.random.Random
 class fuckingstopmefromthetortureofmakingthis: coide("autototem") {
     override var state = false
     val mc = Minecraft.getInstance()
-
+    override var category = "Combat"
     override fun Tiick() {
         var inv = mc.player?.inventory
         if (state == true && inv != null){

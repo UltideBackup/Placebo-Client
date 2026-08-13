@@ -8,6 +8,7 @@ import net.minecraft.client.Minecraft
 class enabler: coide("enabler") {//enables perfect enhanced figure of your imaginationless being
 override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "Misc"
 
 
     override fun Tiick() {

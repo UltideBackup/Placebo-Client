@@ -8,6 +8,7 @@ import net.minecraft.client.Minecraft
 class sunnyday: coide("sunnyday") {
 override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "Client"
 
 
     override fun Tiick() {

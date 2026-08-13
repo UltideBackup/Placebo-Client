@@ -10,6 +10,7 @@ import kotlin.random.Random
 class befriendbots: coide("befriendbots") {
     override var state = false
     var mc = Minecraft.getInstance()
+    override var category = "Client"
 
     override fun Tiick() {
 var level = mc.level

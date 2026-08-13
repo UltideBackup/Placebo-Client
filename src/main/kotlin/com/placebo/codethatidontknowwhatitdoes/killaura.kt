@@ -9,6 +9,7 @@ import kotlin.random.Random
 class killaura: coide("killaura") {
     override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "Combat"
 
     override fun Tiick() {
         var level = mc.level?:return

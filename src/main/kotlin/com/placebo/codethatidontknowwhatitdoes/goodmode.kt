@@ -9,6 +9,7 @@ import kotlin.random.Random
 class goodmode: coide("goodmode") {
 override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "World"//idek what to put this as
 
 
     override fun Tiick() {

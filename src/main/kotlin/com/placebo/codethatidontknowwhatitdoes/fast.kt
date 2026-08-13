@@ -7,6 +7,7 @@ import kotlin.random.Random
 class fast: coide("fast") {
     override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "Movement"
 
     override fun Tiick() {
       if (state == true){

@@ -7,6 +7,7 @@ import kotlin.random.Random
 class bidge: coide("bidge") {
     override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "World"
 
     override fun Tiick() {
         if (state == true) {

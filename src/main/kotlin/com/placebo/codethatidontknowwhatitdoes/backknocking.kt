@@ -9,6 +9,7 @@ import kotlin.random.Random
 class backknocking: coide("backknocking") {//antikb
     override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "Combat"
 
 
     override fun Tiick() {

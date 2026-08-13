@@ -10,6 +10,7 @@ class nicechat: coide("nicechat") {
     override var state = false
     val mc = Minecraft.getInstance()
 var chat = true
+    override var category = "Client"
 
     override fun Tiick() {
         if (state == true) {

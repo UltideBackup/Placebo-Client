@@ -7,6 +7,7 @@ import kotlin.random.Random
 class blinkliterally: coide("blinkliterally") {
 override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "Misc"
 
 
     override fun Tiick() {

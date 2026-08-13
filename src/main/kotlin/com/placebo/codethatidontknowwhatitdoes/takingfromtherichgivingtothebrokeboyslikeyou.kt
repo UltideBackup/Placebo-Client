@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.entity.ChestBlockEntity
 class steel: coide("steel") {
     override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "World"
 
     override fun Tiick() {
         val player = mc.player ?: return
