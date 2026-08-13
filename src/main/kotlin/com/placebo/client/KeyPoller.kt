@@ -25,6 +25,7 @@ object KeyPoller {
         val isKeyDown = InputConstants.isKeyDown(mc.window, OPEN_GUI_KEY)
 
         // Edge detection: key was down, now up = "press" event
+        //this one is better glm
         if (wasKeyDown && !isKeyDown) {
             val current = mc.gui.screen()
             if (current is ClickGuiScreen) {
@@ -32,7 +33,7 @@ object KeyPoller {
                 current.onClose()
             } else {
                 // Not open → open it (works from any screen: game, title, pause, etc.)
-                LOGGER.info("[Placebo] Opening ClickGUI")
+               //still no reason to print we arent debugging
                 ClickGuiScreen.open(mc)
             }
         }

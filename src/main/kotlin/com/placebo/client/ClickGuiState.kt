@@ -2,6 +2,7 @@ package com.placebo.client
 
 // ═══════════════════════════════════════════════════════════════════════════
 // the clickgui + decoy modules were made by ai i cannot be bothered to fucking make this shit
+//i fixed categories tho
 // ═══════════════════════════════════════════════════════════════════════════
 
 import com.placebo.Useless.modules
@@ -72,44 +73,12 @@ object ClickGuiState {
     }
 
     // ── Categorize ────────────────────────────────────────────────────────
-
+//glm made this all hardcoded i fixed it.
+    //there was genuinely no reason for over engineering this.
+    //when confronted said "I treated category system like it was the actual instead of a way to group your existing modules.".
+    //terrible excuse, he needs to learn better.
     private fun categorize(m: coide): String {
-        val n = m.name.lowercase()
-        return when {
-            n.contains("kill") || n.contains("aura") || n.contains("hit") ||
-            n.contains("attack") || n.contains("crit") || n.contains("aimbot") ||
-            n.contains("reach") || n.contains("velocity") || n.contains("antikb") ||
-            n.contains("antiknockback") -> "Combat"
-
-            n.contains("speed") || n.contains("fast") || n.contains("fly") ||
-            n.contains("jump") || n.contains("sprint") || n.contains("step") ||
-            n.contains("noclip") || n.contains("phase") || n.contains("jesus") ||
-            n.contains("spider") || n.contains("glide") || n.contains("parkour") ||
-            n.contains("safewalk") || n.contains("airjump") || n.contains("autowalk") -> "Movement"
-
-            n.contains("chest") || n.contains("steel") || n.contains("inv") ||
-            n.contains("auto") || n.contains("totem") || n.contains("gapple") ||
-            n.contains("armor") || n.contains("refill") || n.contains("eat") ||
-            n.contains("pot") || n.contains("fish") || n.contains("farm") ||
-            n.contains("mine") -> "Player"
-
-            n.contains("chat") || n.contains("name") || n.contains("nick") ||
-            n.contains("antiaim") || n.contains("spin") || n.contains("autoafk") ||
-            n.contains("autogg") || n.contains("autoqueue") || n.contains("nameprotect") ||
-            n.contains("autoclicker") || n.contains("cps") -> "Client"
-
-            n.contains("render") || n.contains("esp") || n.contains("tracer") ||
-            n.contains("hud") || n.contains("nametag") || n.contains("chams") ||
-            n.contains("outline") || n.contains("xray") || n.contains("bright") ||
-            n.contains("nightvision") || n.contains("camera") || n.contains("crosshair") ||
-            n.contains("fullbright") || n.contains("zoom") || n.contains("shader") -> "Render"
-
-            n.contains("world") || n.contains("nuker") || n.contains("scaffold") ||
-            n.contains("bridge") || n.contains("bidge") || n.contains("breaker") ||
-            n.contains("fastplace") || n.contains("fastbreak") || n.contains("waypoints") -> "World"
-
-            else -> "Misc"
-        }
+        return m.category//pathetic.
     }
 
     // ── Animation ────────────────────────────────────────────────────────

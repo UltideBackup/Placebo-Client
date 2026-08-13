@@ -10,7 +10,7 @@ import net.minecraft.util.ARGB
 object Theme {
 
     // ── Monochrome palette ───────────────────────────────────────────────
-    const val BACKDROP:   Int = 0xD0000000.toInt()
+    const val BACKDROP:   Int = 0xD0000000.toInt()//gray
     const val INK_0:      Int = 0xFF000000.toInt()
     const val INK_25:     Int = 0xFF050505.toInt()
     const val INK_50:     Int = 0xFF0A0A0A.toInt()
@@ -34,7 +34,7 @@ object Theme {
     const val INK_850:    Int = 0xFFD8D8D8.toInt()
     const val INK_900:    Int = 0xFFEAEAEA.toInt()
     const val INK_950:    Int = 0xFFF5F5F5.toInt()
-    const val INK_1000:   Int = 0xFFFFFFFF.toInt()
+    const val INK_1000:   Int = 0xFFFFFFFF.toInt()//gray and everything fucking else wtf are you doing bro
 
     // ── Layout (in scaled coords, ~GUI scale 2 equivalent) ───────────────
     const val PANEL_WIDTH:        Int = 178
@@ -224,3 +224,5 @@ fun GuiGraphicsExtractor.outlineRounded(x: Int, y: Int, w: Int, h: Int, r: Int, 
         }
     }
 }
+
+//if this is overengineered i wouldnt even know because this is genuine unreadable slop

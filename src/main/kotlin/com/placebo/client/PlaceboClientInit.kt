@@ -19,9 +19,7 @@ import org.slf4j.LoggerFactory
 class PlaceboClientInit : ClientModInitializer {
 
     private val logger = LoggerFactory.getLogger("PlaceboClient/Init")
-
     override fun onInitializeClient() {
-        logger.info("[Placebo] Client initialized — press RIGHT-SHIFT in-game to open ClickGUI")
-        logger.info("[Placebo] Key polling via ExampleMixin → KeyPoller.tick() (no Fabric key-mapping API needed)")
+        //why print anything we arent debugging?
     }
 }

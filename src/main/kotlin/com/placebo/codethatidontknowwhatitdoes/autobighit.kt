@@ -8,6 +8,7 @@ import kotlin.random.Random
 class autobighit: coide("autobighit") {
     override var state = false
     val mc = Minecraft.getInstance()
+    override var category = "Combat"
 
     override fun Tiick() {
         if (state == true) {
