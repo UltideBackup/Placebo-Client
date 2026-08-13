@@ -1,0 +1,25 @@
+// ═══════════════════════════════════════════════════════════════════════════
+// the clickgui + decoy modules were made by ai i cannot be bothered to fucking make this shit
+// ═══════════════════════════════════════════════════════════════════════════
+//
+// AUTO-GENERATED DECOY MODULE.
+// This file was produced by /home/z/my-project/scripts/generate_decoy_modules.py
+// to bulk up the module list so the genuine modules are harder to spot.
+// It does nothing (or almost nothing). Do not expect functionality.
+//
+// Class name : AntiVibe
+// Display name: anti_vibe
+// ═══════════════════════════════════════════════════════════════════════════
+package com.placebo.codethatidontknowwhatitdoes.decoy
+
+import com.placebo.Useless.uselessclasses.coide
+import net.minecraft.client.Minecraft
+
+class AntiVibe : coide("anti_vibe") { //registered for the count not for the function
+    override var state = false
+    private val mc = Minecraft.getInstance()
+
+    override fun Tiick() {
+        // see also: every other decoy module in this package
+    }
+}

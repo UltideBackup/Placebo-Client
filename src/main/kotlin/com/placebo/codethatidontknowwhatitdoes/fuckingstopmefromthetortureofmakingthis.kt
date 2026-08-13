@@ -6,7 +6,7 @@ import net.minecraft.world.item.ItemStack
 import kotlin.random.Random
 
 class fuckingstopmefromthetortureofmakingthis: coide("autototem") {
-    override var state = true
+    override var state = false
     val mc = Minecraft.getInstance()
 
     override fun Tiick() {

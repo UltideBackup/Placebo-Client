@@ -1,0 +1,17 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "placebo-client:placebo_bold.ttf",
+      "shift": [0, 1.5],
+      "size": 11.0,
+      "oversample": 3.0
+    },
+    {
+      "type": "space",
+      "advances": {
+        " ": 4.0
+      }
+    }
+  ]
+}

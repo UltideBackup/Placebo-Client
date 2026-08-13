@@ -1,35 +1,41 @@
 {
-	"schemaVersion": 1,
-	"id": "placebo-client",
-	"version": "${version}",
-	"name": "Placebo Client",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/placebo-client/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			{
-				"value": "com.placebo.PlaceboClient",
-				"adapter": "kotlin"
-			}
-		]
-	},
-	"mixins": [
-		"placebo-client.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
-		"java": ">=25",
-		"fabric-api": "*",
-		"fabric-language-kotlin": "*"
-	}
+        "schemaVersion": 1,
+        "id": "placebo-client",
+        "version": "${version}",
+        "name": "Placebo Client",
+        "description": "A joke Minecraft Fabric client. The native clickgui + 155 decoy modules were made with AI assistance; the 14 genuine modules are hand-written. Have fun finding the real ones among the decoys.",
+        "authors": [
+                "Me!"
+        ],
+        "contact": {
+                "homepage": "https://github.com/UltideBackup/Placebo-Client",
+                "sources": "https://github.com/UltideBackup/Placebo-Client"
+        },
+        "license": "GPL-3.0",
+        "icon": "assets/placebo-client/icon.png",
+        "environment": "client",
+        "entrypoints": {
+                "main": [
+                        {
+                                "value": "com.placebo.PlaceboClient",
+                                "adapter": "kotlin"
+                        }
+                ],
+                "client": [
+                        {
+                                "value": "com.placebo.client.PlaceboClientInit",
+                                "adapter": "kotlin"
+                        }
+                ]
+        },
+        "mixins": [
+                "placebo-client.mixins.json"
+        ],
+        "depends": {
+                "fabricloader": ">=0.19.3",
+                "minecraft": "~26.2",
+                "java": ">=25",
+                "fabric-api": "*",
+                "fabric-language-kotlin": "*"
+        }
 }
