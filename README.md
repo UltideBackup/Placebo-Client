@@ -2,6 +2,8 @@
 
 Placebo Client is a Minecraft Fabric client I made in Kotlin
 
+This is not a serious client this is more of something I just goto and make stupid stuff when Im bored
+
 I made this mostly because I thought itd be funny to make my own client and see how far I could get
 
 Also before you look at the code and wonder what the hell Im doing
