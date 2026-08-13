@@ -7,11 +7,12 @@ package com.placebo.client
 
 import com.placebo.Core.modules
 import com.placebo.Core.Classes.Module
+import net.minecraft.client.Minecraft
 import java.io.File
 import java.util.Properties
 
 object ClickGuiState {
-
+var window = Minecraft.getInstance().window
     data class Panel(
         val category: String,
         var x: Float,
@@ -29,10 +30,9 @@ object ClickGuiState {
     )
 
     val panels: MutableList<Panel> = mutableListOf()
-
-    /** Screen dimensions in our scaled coord system (updated each frame). */
-    var screenW: Int = 1920
-    var screenH: Int = 1080
+//no reason to hardcode this
+    var screenW: Int = window.screenWidth
+    var screenH: Int = window.screenHeight
 
     var hoveredModule: ModuleRow? = null
 

@@ -2,7 +2,10 @@ package com.placebo.Core
 
 import com.placebo.Core.Classes.Module
 import com.placebo.Modules.Joke.*
-import com.placebo.Modules.Test.*
+import com.placebo.Modules.Combat.*
+import com.placebo.Modules.Movement.*
+import com.placebo.Modules.Visual.*
+import com.placebo.Modules.World.*
 
 val modules = mutableListOf<Module>(
     Jokekillaura(),
@@ -19,7 +22,12 @@ val modules = mutableListOf<Module>(
     Jokeblinkliterally(),
     Jokesunnyday(),
     Jokefuckingstopmefromthetortureofmakingthis(),
-    PacketTest()
+    Esp(),
+    Chams(),
+    Nametags(),
+    Velocity(),
+    Speed(),
+    AutoTool()
 
 
 

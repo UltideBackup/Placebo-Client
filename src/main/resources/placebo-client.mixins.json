@@ -4,7 +4,8 @@
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
 		"ExampleMixin",
-		"PacketHooks"
+		"PacketHooks",
+		"EntityHooks"
 	],
 	"injectors": {
 		"defaultRequire": 1
