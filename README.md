@@ -35,12 +35,10 @@ Some of the modules are
 
 And yes those are actually the names
 
-But have fun finding them theres a lot of random modules that dont exist just in the gui
-
 Theres no scripting API or visual modules right now
-I might add those if I ever actually update this
 
-## Dont Take The Modules Seriously
+## Dont Take Some Of The Modules Seriously
+This is for stuff in the joke category
 These modules are not supposed to be taken seriously and they probably arent going to work how you expect them to
 
 Some of them are literally just jokes
@@ -51,7 +49,7 @@ I just ran out of ideas while making them so some of the modules reuse things I 
 Basically I was running out of shit to make
 
 ## Hypixel Bypass
-
+This is also meant for stuff in the joke category do not download this client expecting it to genuinely bypass
 This is obviously the first open source client to bypass Hypixel anticheat
 
 Does it bypass
@@ -84,15 +82,9 @@ Im not going to lie and say I wrote every single line myself
 
 ## Is This Getting Updated?
 
-Probably not
+Yes
 
-Theres a chance Ill come back and add more stuff like visual modules or a scripting API but I honestly dont know
-
-Im also working on another Minecraft client that is actually serious and isnt a joke
-
-That one isnt going to be released for a while though
-
-This was fun to make so maybe soon Ill update this
+Making this has been very fun so this most likely will be continued but shifting the focus to real modules and putting the current ones into a joke category
 
 ## License
 
