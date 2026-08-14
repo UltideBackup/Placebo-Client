@@ -3,8 +3,8 @@
     <img width="180" src="https://raw.githubusercontent.com/myl0o/Placebo-Client/refs/heads/main/favicon-dark.svg">
 </p>
 
-[Website]([YOUR_WEBSITE](https://placeboclient.vercel.app/)) |
-[Discord]([YOUR_DISCORD](https://discord.gg/pz8knTQHg)) 
+[Website](https://placeboclient.vercel.app/) |
+[Discord](https://discord.gg/pz8knTQHg) 
 </div>
 
 # Placebo Client
