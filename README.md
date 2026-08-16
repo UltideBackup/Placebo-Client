@@ -1,97 +1,56 @@
-# Placebo Client Fabric 26.2
+<div align="center">
+<p>
+    <img width="180" src="https://raw.githubusercontent.com/myl0o/Placebo-Client/refs/heads/main/favicon-dark.svg">
+</p>
 
-Placebo Client is a Minecraft Fabric client I made in Kotlin
+[Website](https://placeboclient.vercel.app/) |
+[Discord](https://discord.gg/pz8knTQHg) 
+</div>
 
-This is not a serious client this is more of something I just goto and make stupid stuff when Im bored
+# Placebo Client
 
-I made this mostly because I thought itd be funny to make my own client and see how far I could get
+Placebo is a free and open-source Minecraft client built with Kotlin and Fabric.
 
-Also before you look at the code and wonder what the hell Im doing
+## Features
 
-Ive only been programming for around 22 days
+Placebo currently includes systems for:
 
-So dont expect some insane professional client from this
+- Combat
+- Movement
+- Inventory
+- Visuals
+- Player
+- World
+- Miscellaneous
+- Events
+- Packets
 
-## What it has
+The client is actively being developed and new features are added regularly.
 
-Right now it has a bunch of random modules for combat movement inventory and other stuff
+## Development
 
-Some of the modules are
+Placebo is primarily written in Kotlin and built on top of Fabric.
 
-* `Jokekillaura`
-* `fast`
-* `bidge`
-* `backknocking`
-* `goodmode`
-* `nicechat`
-* `autobighit`
-* `steel`
-* `enabler`
-* `befriendbots`
-* `Jokeheystopfalling`
-* `blinkliterally`
-* `sunnyday`
-* `fuckingstopmefromthetortureofmakingthis`
+The project uses its own module, event, and packet systems to handle client functionality.
 
-And yes those are actually the names
+## Contributing
 
-Theres no scripting API or visual modules right now
+Contributions are welcome. Feel free to open an issue for bugs, suggestions, or feature requests, or submit a pull request with improvements.
 
-## Dont Take Some Of The Modules Seriously
-This is for stuff in the joke category
-These modules are not supposed to be taken seriously and they probably arent going to work how you expect them to
+## Issues
 
-Some of them are literally just jokes
+Found a bug? Open an issue on GitHub and include any relevant logs, crash reports, and steps to reproduce it.
 
-I also know more about making clients than what I put into these modules
-I just ran out of ideas while making them so some of the modules reuse things I already did in other modules
+## Project
 
-Basically I was running out of shit to make
+Placebo started as a joke project but has since changed into something Im taking seriously.
 
-## Hypixel Bypass
-This is also meant for stuff in the joke category do not download this client expecting it to genuinely bypass
-This is obviously the first open source client to bypass Hypixel anticheat
-
-Does it bypass
-
-Yes
-
-Does it actually work
-
-Yes but barely(This depends on what you think its gonna do)
-
-## How I Made It
-
-The whole client took me around 3 hours to make
-
-Im also putting the raw recording of me making it here soon
-
-The first ~2 hours have me actually talking
-
-The last hour is basically just me coding in complete silence
-
-I also had a voice changer on the entire time so I sound completely different
-
-## AI
-
-There was originally gonna be mcef but that shit never wanted to work so its a basic ui(100% made by ai)
-
-Everything else was made by me
-
-Im not going to lie and say I wrote every single line myself
-
-## Is This Getting Updated?
-
-Yes
-
-Making this has been very fun so this most likely will be continued but shifting the focus to real modules and putting the current ones into a joke category
+Some of the original joke modules remain as legacy features but they are no longer representative of the projects direction.
 
 ## License
 
-Placebo Client is licensed under GNU GPL v3.0
+Placebo Client is licensed under the GNU General Public License v3.0.
 
-You can modify it fork it and do whatever the license allows
+You are free to use, modify, and redistribute the project as permitted by the license.
 
-Just dont take my code and pretend you made it
-
-Honestly you probably dont even want to pretend you wrote this
+See [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) for the full license.
