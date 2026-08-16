@@ -30,10 +30,16 @@ class ShieldBreaker: Module("Shield Breaker") {
                         var item = player.inventory.getItem(i)
                         if (item.item is AxeItem){
                             oldSlot = player.inventory.selectedSlot
-                            player.inventory.selectedSlot = i
-                            gamemode.attack(player, entity)
-                            resetDelay.runAfter(Random.nextInt(500,1000).toLong()) {
-                                player.inventory.selectedSlot = oldSlot
+                            resetDelay.runAfter(Random.nextLong(40,90)) {
+                                player.inventory.selectedSlot = i
+
+                                resetDelay.runAfter(Random.nextLong(30, 70)) {
+                                    gamemode.attack(player, entity)
+                                    player.swing(net.minecraft.world.InteractionHand.MAIN_HAND)
+                                    resetDelay.runAfter(Random.nextInt(300, 500).toLong()) {
+                                        player.inventory.selectedSlot = oldSlot
+                                    }
+                                }
                             }
                             break
                         }

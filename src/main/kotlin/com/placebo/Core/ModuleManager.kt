@@ -26,7 +26,8 @@ val modules = mutableListOf<Module>(
     SafeWalk(),
 //    AutoSwap() removed till i can find a good use case for this
     Step(),
-    SuperJump()
+    SuperJump(),
+    FakeLag()
 )
 
 fun tick(){

@@ -18,51 +18,59 @@ import kotlin.random.Random
 
 //holy shit this is bad but it should work
 class AntiShieldBreak: Module("Anti Shield Break") {
-    override var mode=0
-    override var state=false
-    override var category="Combat"
+    override var mode = 0
+    override var state = false
+    override var category = "Combat"
     var mc = Minecraft.getInstance()
     private val resetDelay = DelayHelper()
 
 
     override fun Tick() {
         var player = mc.player ?: return
-var level = mc.level?:return
-var gamemode = mc.gameMode?:return
-        if(!state) return
+        var level = mc.level ?: return
+        var gamemode = mc.gameMode ?: return
+        if (!state) return
         resetDelay.tick()
         if (resetDelay.isPending()) return
-for (entity in level.entitiesForRendering()){
-    if(player.isBlocking && mc.crosshairPickEntity == entity){
-       var bestslot = -1
-        var highestkb = 0
-        if (entity is Player && entity !is LocalPlayer && entity.mainHandItem.item is AxeItem) {
-for(i in 0..8){
-var item = player.inventory.getItem(i)
-    val kb = item.getEnchantLevel(Enchantments.KNOCKBACK)
-    if (kb > highestkb) {
-        highestkb = kb
-        bestslot = i
-    }else if (highestkb == 0 && bestslot == -1&&item.`is`(ItemTags.SWORDS)){
-        bestslot = i
+        for (entity in level.entitiesForRendering()) {
+            if (player.isBlocking && mc.crosshairPickEntity == entity) {
+                var bestslot = -1
+                var highestkb = 0
+                if (entity is Player && entity !is LocalPlayer && entity.mainHandItem.item is AxeItem) {
+                    for (i in 0..8) {
+                        var item = player.inventory.getItem(i)
+                        val kb = item.getEnchantLevel(Enchantments.KNOCKBACK)
+                        if (kb > highestkb) {
+                            highestkb = kb
+                            bestslot = i
+                        } else if (highestkb == 0 && bestslot == -1 && item.`is`(ItemTags.SWORDS)) {
+                            bestslot = i
 
-    }
+                        }
 
 
-}
-            if (bestslot != -1){
-                val oldSlot = player.inventory.selectedSlot
-                mc.options.keyUse.isDown = false
-                player.inventory.selectedSlot = bestslot
-                gamemode.attack(player, entity)
-                player.swing(InteractionHand.MAIN_HAND)
-                resetDelay.runAfter(Random.nextInt(500,1000).toLong()) {
-                    player.inventory.selectedSlot = oldSlot
+                    }
+                    if (bestslot != -1) {
+                        val oldSlot = player.inventory.selectedSlot
+                        mc.options.keyUse.isDown = false
+                        gamemode.releaseUsingItem(player)
+                        resetDelay.runAfter(Random.nextInt(40, 90).toLong()) {
+                            player.inventory.selectedSlot = bestslot
+
+                            resetDelay.runAfter(Random.nextInt(30, 70).toLong()) {
+                                if (entity.isAlive) {
+                                    gamemode.attack(player, entity)
+                                    player.swing(InteractionHand.MAIN_HAND)
+                                }
+
+                                resetDelay.runAfter(Random.nextInt(300, 550).toLong()) {
+                                    player.inventory.selectedSlot = oldSlot
+                                }
+                            }
+                        }
+                    }
                 }
-
             }
         }
-    }
-}
     }
 }
