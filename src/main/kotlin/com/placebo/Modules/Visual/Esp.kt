@@ -10,7 +10,7 @@ class Esp: Module("Esp") {
     override var category = "Visual"
     var mc = Minecraft.getInstance()
     override fun Tick() {
-        if (state == true) {
+        if (state) {
             var level = mc.level
             if (level != null)
                 for (entity in level.entitiesForRendering()) {

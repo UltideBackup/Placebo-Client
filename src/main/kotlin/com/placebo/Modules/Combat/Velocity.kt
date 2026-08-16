@@ -14,7 +14,7 @@ class Velocity: Module("Velocity"), Listener {
     override var mode = 1//make this configurable
     var mc = Minecraft.getInstance()
     override fun onEvent(event: Event) {
-        if (state == true){
+        if (state){
             when (mode) {
                 0 -> CancelPacket(event)
                 1 -> JumpReset(event)

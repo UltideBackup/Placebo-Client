@@ -8,30 +8,26 @@ import com.placebo.Modules.Visual.*
 import com.placebo.Modules.World.*
 
 val modules = mutableListOf<Module>(
-    Jokekillaura(),
-    Jokefast(),
-    Jokebidge(),
-    Jokebackknocking(),
-    Jokegoodmode(),
-    Jokenicechat(),
-    Jokeautobighit(),
-    Jokesteel(),
-    Jokeenabler(),
-    Jokebefriendbots(),
-    Jokeheystopfalling(),
-    Jokeblinkliterally(),
-    Jokesunnyday(),
-    Jokefuckingstopmefromthetortureofmakingthis(),
     Esp(),
     Chams(),
     Nametags(),
     Velocity(),
     Speed(),
-    AutoTool()
-
-
-
-)//for some reason liquid bounce hardcodes instead of using ksp or smth lowkey my lazy ass would do that same
+    AutoTool(),
+    Nofall(),
+    Blink(),
+    AirJump(),
+    ChestStealer(),
+    Triggerbot(),
+    Killaura(),
+    ShieldBreaker(),
+    AntiShieldBreak(),
+    FastPlace(),
+    SafeWalk(),
+//    AutoSwap() removed till i can find a good use case for this
+    Step(),
+    SuperJump()
+)
 
 fun tick(){
     for (module in modules){

@@ -23,18 +23,12 @@ object KeyPoller {
     fun tick() {
         val mc = Minecraft.getInstance()
         val isKeyDown = InputConstants.isKeyDown(mc.window, OPEN_GUI_KEY)
-
-        // Edge detection: key was down, now up = "press" event
-        //this one is better glm
         if (wasKeyDown && !isKeyDown) {
             val current = mc.gui.screen()
-            if (current is ClickGuiScreen) {
-                // Already open → close it (toggle behavior)
+            if (current is ClickGUI) {
                 current.onClose()
             } else {
-                // Not open → open it (works from any screen: game, title, pause, etc.)
-               //still no reason to print we arent debugging
-                ClickGuiScreen.open(mc)
+                Minecraft.getInstance().gui.setScreen(ClickGUI())
             }
         }
 

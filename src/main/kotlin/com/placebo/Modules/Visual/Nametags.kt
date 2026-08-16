@@ -14,7 +14,7 @@ class Nametags: Module("Nametags") {
     var doDistance = true//make this customizable with settings
     var mc = Minecraft.getInstance()
     override fun Tick() {
-        if (state == true) {
+        if (state) {
             var level = mc.level
             var player = mc.player
             if (level != null && player != null) {

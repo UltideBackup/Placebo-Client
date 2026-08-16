@@ -3,7 +3,7 @@
         "id": "placebo-client",
         "version": "${version}",
         "name": "Placebo Client",
-        "description": "A joke Minecraft Fabric client. The native clickgui + 155 decoy modules were made with AI assistance; the 14 genuine modules are hand-written. Have fun finding the real ones among the decoys.",
+        "description": "A Minecraft Fabric client.",
         "authors": [
                 "Mylo"
         ],
@@ -19,12 +19,6 @@
                 "main": [
                         {
                                 "value": "com.placebo.PlaceboClient",
-                                "adapter": "kotlin"
-                        }
-                ],
-                "client": [
-                        {
-                                "value": "com.placebo.client.PlaceboClientInit",
                                 "adapter": "kotlin"
                         }
                 ]

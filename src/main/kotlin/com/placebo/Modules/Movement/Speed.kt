@@ -13,7 +13,7 @@ class Speed:Module("Speed"), Listener {
     var mc = Minecraft.getInstance()
 
     override fun onEvent(event: Event) {
-        if (state == true) {
+        if (state) {
             when (mode) {
                 0 -> Vanilla(event)
             }
