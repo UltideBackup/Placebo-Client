@@ -11,7 +11,7 @@ import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket
 class Velocity: Module("Velocity"), Listener {
     override var state = false
     override var category = "Combat"
-    override var mode = 1//make this configurable
+    override var mode =  2//make this configurable
     var mc = Minecraft.getInstance()
     override fun onEvent(event: Event) {
         if (state){
@@ -32,7 +32,7 @@ event.isCancelled = true
 
     private fun JumpReset(event: Event) {
         if (event is PacketEvent && event.packet is ClientboundSetEntityMotionPacket && event.direction == Direction.INCOMING && event.packet.id == mc.player?.id) {
-        mc.player?.jumpFromGround()//this module does not remove velocity but reduces it
+        mc.player?.jumpFromGround()//this does not work
         }
     }
     private fun SpoofPacket(event: Event) {

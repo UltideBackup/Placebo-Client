@@ -27,7 +27,10 @@ val modules = mutableListOf<Module>(
 //    AutoSwap() removed till i can find a good use case for this
     Step(),
     SuperJump(),
-    FakeLag()
+    FakeLag(),
+//    AntiMaceSmash() removed till i fix implementation
+    Scaffold(),
+    MLG()
 )
 
 fun tick(){
