@@ -30,7 +30,8 @@ val modules = mutableListOf<Module>(
     FakeLag(),
 //    AntiMaceSmash() removed till i fix implementation
     Scaffold(),
-    MLG()
+    MLG(),
+    AimAssist()
 )
 
 fun tick(){
