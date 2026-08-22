@@ -1,6 +1,8 @@
 package com.placebo.Modules.Combat
 
 import com.placebo.Core.Classes.Module
+import com.placebo.Utils.makeCircle
+import com.placebo.Utils.rainbow
 import net.minecraft.client.Minecraft
 import net.minecraft.client.player.LocalPlayer
 import net.minecraft.commands.arguments.EntityAnchorArgument
@@ -30,6 +32,7 @@ class Killaura: Module("Killaura") {
             if (entity is Player&& entity !is LocalPlayer){
                 gamemode?.attack(player, entity)
                 player.swing(InteractionHand.MAIN_HAND)
+                makeCircle(entity.position(), 1f, rainbow(),false)
                 break
             }
         }
@@ -48,6 +51,7 @@ class Killaura: Module("Killaura") {
                 player.lookAt(EntityAnchorArgument.Anchor.EYES, Vec3(entityX, entityY, entityZ))
                 gamemode?.attack(player, entity)
                 player.swing(InteractionHand.MAIN_HAND)
+                makeCircle(entity.position(), 1f, rainbow(),false)
                 break
             }
 

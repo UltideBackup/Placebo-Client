@@ -140,7 +140,6 @@ fun smoothLookAt(
     val newTargetYaw = Math.toDegrees(atan2(dz, dx)).toFloat() - 90f
     val newTargetPitch = -Math.toDegrees(atan2(dy, horizontal)).toFloat().coerceIn(-90f, 90f)
 
-    // direction change: how much the TARGET moved since last tick
     val targetDeltaYaw = abs(Mth.wrapDegrees(newTargetYaw - targetYaw))
     val targetDeltaPitch = abs(newTargetPitch - targetPitch)
 
@@ -172,7 +171,6 @@ fun smoothLookAt(
         false
     )
 
-    // GCD normalize
     rotationYaw = normalizeRotation(rotationYaw, previousRotationYaw)
     rotationPitch = normalizeRotation(rotationPitch, previousRotationPitch)
 

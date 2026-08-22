@@ -5,6 +5,8 @@ import com.placebo.Core.Event
 import com.placebo.Core.Listener
 import com.placebo.Events.RotationEvent
 import com.placebo.Utils.DelayHelper
+import com.placebo.Utils.makeCircle
+import com.placebo.Utils.rainbow
 import net.minecraft.client.Minecraft
 import net.minecraft.client.player.LocalPlayer
 import net.minecraft.util.Mth
@@ -66,6 +68,7 @@ class AimAssist: Module("AimAssist"), Listener {
 
                     event.yaw = Math.toDegrees(atan2(dz, dx)).toFloat() - 90f
                     event.pitch = -Math.toDegrees(atan2(dy, horizontal)).toFloat()
+                    makeCircle(entity.position(), 1f, rainbow(),false)
                 }
             }
         }

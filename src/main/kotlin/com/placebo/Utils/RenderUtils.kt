@@ -1,5 +1,6 @@
 package com.placebo.Utils
 
+import net.fabricmc.loader.impl.lib.sat4j.core.Vec
 import net.minecraft.gizmos.GizmoStyle
 import net.minecraft.gizmos.Gizmos
 import net.minecraft.gizmos.TextGizmo
@@ -20,5 +21,12 @@ fun makeName(x: Double,y:Double, z: Double,entityName: String, color: Int,distan
     }else{
         Gizmos.billboardText(entityName, Vec3(x, y, z), TextGizmo.Style.forColorAndCentered(color) ).setAlwaysOnTop()
     }
+}
 
+fun makeCircle(pos: Vec3,radius:Float,color: Int,fill: Boolean ){
+    if (!fill){
+        Gizmos.circle(pos,radius, GizmoStyle.stroke(color)).setAlwaysOnTop()
+    }else{
+        Gizmos.circle(pos,radius, GizmoStyle.fill(color)).setAlwaysOnTop()
+    }
 }

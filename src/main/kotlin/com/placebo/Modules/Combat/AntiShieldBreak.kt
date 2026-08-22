@@ -3,6 +3,8 @@ package com.placebo.Modules.Combat
 import com.placebo.Core.Classes.Module
 import com.placebo.Utils.DelayHelper
 import com.placebo.Utils.getEnchantLevel
+import com.placebo.Utils.makeCircle
+import com.placebo.Utils.rainbow
 import net.minecraft.client.Minecraft
 import net.minecraft.client.player.LocalPlayer
 import net.minecraft.core.component.DataComponentType
@@ -37,6 +39,7 @@ class AntiShieldBreak: Module("Anti Shield Break") {
                 var bestslot = -1
                 var highestkb = 0
                 if (entity is Player && entity !is LocalPlayer && entity.mainHandItem.item is AxeItem) {
+                    makeCircle(entity.position(), 1f, rainbow(),false)
                     for (i in 0..8) {
                         var item = player.inventory.getItem(i)
                         val kb = item.getEnchantLevel(Enchantments.KNOCKBACK)

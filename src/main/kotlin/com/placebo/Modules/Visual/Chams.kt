@@ -18,11 +18,7 @@ class Chams: Module("Chams") {
                 for (entity in level.entitiesForRendering()) {
                     var box = entity.boundingBox
                     if (entity !is LocalPlayer) {makeBox(box, rainbow(), true)}//might add another mode so that it just displays the entity over everything so you can just see it
-
                 }
-
         }
-
-
     }
 }

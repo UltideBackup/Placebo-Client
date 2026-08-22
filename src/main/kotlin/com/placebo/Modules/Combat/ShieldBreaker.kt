@@ -2,6 +2,8 @@ package com.placebo.Modules.Combat
 
 import com.placebo.Core.Classes.Module
 import com.placebo.Utils.DelayHelper
+import com.placebo.Utils.makeCircle
+import com.placebo.Utils.rainbow
 import net.minecraft.client.Minecraft
 import net.minecraft.client.player.LocalPlayer
 import net.minecraft.world.entity.player.Player
@@ -26,6 +28,7 @@ class ShieldBreaker: Module("Shield Breaker") {
         for (entity in level.entitiesForRendering()){
             if (entity is Player && entity !is LocalPlayer){
                 if (entity.isBlocking && mc.crosshairPickEntity == entity){
+                    makeCircle(entity.position(), 1f, rainbow(),false)
                     for (i in 0..8){
                         var item = player.inventory.getItem(i)
                         if (item.item is AxeItem){
