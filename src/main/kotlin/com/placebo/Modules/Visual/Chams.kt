@@ -13,7 +13,6 @@ class Chams: Module("Chams") {
     var mc = Minecraft.getInstance()
     override fun Tick() {
         if (state == true) {
-            Minecraft.getInstance().gui.setScreen(ClickGUI())
             var level = mc.level
             if (level != null)
                 for (entity in level.entitiesForRendering()) {
